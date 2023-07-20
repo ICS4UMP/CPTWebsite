@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch</title>
+    <link rel="icon" href="https://i.imgur.com/5VIofju.png">
+    <script src="https://kit.fontawesome.com/e4e518af0e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesMerch.css">
+    <link rel="stylesheet" href="stylesNavbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"> Mac DeMarco</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="aboutmac.html" class="navbar__links"> About Mac </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="songs.html" class="navbar__links"> Discography </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="merch.html" class="button"> Merch </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Merch Section -->
+    <div class="merch">
+        <h1>Merchandise</h1>
+        <div class="merch__container">
+            <div class="merch__card">
+                <h2>Smiley Dad Hat</h2>
+                <p>$29.99</p>
+                <button onclick="addToCart('Smiley Dad Hat', 29.99)">Add to cart</button>
+            </div>
+            <div class="merch__card">
+                <h2>MRL Hoodie</h2>
+                <p>$59.99</p>
+                <button onclick="addToCart('MRL Hoodie', 59.99)">Add to cart</button>
+            </div>
+            <div class="merch__card">
+                <h2>Five Easy Hot Dogs Shirt</h2>
+                <p>$17.99</p>
+                <button onclick="addToCart('Five Easy Hot Dogs Shirt', 17.99)">Add to cart</button>
+            </div>
+            <div class="merch__card">
+                <h2>This Old Dog Vinyl</h2>
+                <p>$20.99</p>
+                <button onclick="addToCart('This Old Dog Vinyl', 20.99)">Add to cart</button>
+            </div>
+            <div class="merch__card">
+                <h2>Salad Days Vinyl</h2>
+                <p>$20.99</p>
+                <button onclick="addToCart('Salad Days Vinyl', 20.99)">Add to cart</button>
+            </div>
+            <div class="merch__card">
+                <h2>2 Vinyl</h2>
+                <p>$18.99</p>
+                <button onclick="addToCart('2 Vinyl', 18.99)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cart Section -->
+    <div class="cart">
+        <div class="cart-items">
+                <div class="cart-item"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section-->
+    <div class="footer__container">
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="index.html" id="footer__logo"></i>Mac DeMarco</a>
+                </div>
+                <p class="website__rights">Created By Matteo Piomelli, 2023.</p>
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/MacDeMarco/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/macsrecordlabel/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/macdemarco" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM?si=Yq6calVITomQNkT0lah1Og" class="social__icon--link" target="_blank">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                    <a href="https://music.apple.com/us/artist/mac-demarco/501437762" class="social__icon--link" target="_blank">
+                        <i class="fab fa-apple"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

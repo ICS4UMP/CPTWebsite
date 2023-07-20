@@ -1,0 +1,327 @@
+/* Merch Section */
+.merch {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120vh;
+}
+
+.merch h1 {
+    background-color: #fffdd0;
+    background-image:linear-gradient(to right, #fffdd0 0%, #fff 100%);
+    background-size: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.merch__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.merch__card {
+    margin: 1rem;
+    height: 400px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('https://i.imgur.com/BzMp3aI.png');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.merch__card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('https://i.imgur.com/W7H1SzE.png');
+}
+
+.merch__card:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('https://i.imgur.com/YocneeW.png');
+}
+
+.merch__card:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('https://i.imgur.com/OA2D8Vj.png');
+}
+
+.merch__card:nth-child(5) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('https://i.imgur.com/JWNJnaD.png');
+}
+
+.merch__card:nth-child(6) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('https://i.imgur.com/NTHXJ8p.png');
+}
+
+.merch h2 {
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+
+.merch p {
+    position: absolute;
+    top: 325px;
+    left: 30px;
+}
+
+.merch__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #18A999;
+    position: absolute;
+    top: 350px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.merch__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+}
+
+.merch__card:not(:hover) {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Merch Responsive Section */
+@media screen and (max-width: 1313px) {
+    .merch{
+        height: 170vh;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .merch {
+        height: 170vh;
+    }
+
+    .merch h1 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .merch__card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .merch h2 {
+        position: absolute;
+        top: 210px;
+        left: 30px;
+        font-size: 1.25rem;
+    }
+    
+    .merch p {
+        position: absolute;
+        top: 230px;
+        left: 30px;
+    }
+    
+    .merch__card button {
+        position: absolute;
+        top: 250px;
+        left: 30px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .merch {
+        height: 2200px;
+    }
+
+    .merch__container {
+        margin-bottom: 400px;
+    }
+
+    .merch h1 {
+        font-size: 1.5rem;
+    }
+
+    .merch__card {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .merch__card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .merch h2 {
+        font-size: 1em;
+        top: 140px;
+    }
+
+    .merch p {
+       opacity: 0;
+    }
+
+    .merch__card button {
+        top: 160px;
+        width: 95px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    .merch {
+        height: 1800px;
+    }
+}
+
+/* Cart Section */
+.cart {
+    background-color: #011936;
+    color: #fff;
+    padding: 20px;
+}
+
+.cart-items {
+    padding: 10px;
+}
+
+.cart-item h3 {
+    margin-top: 2%;
+}
+
+.cart-item button{
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #18A999;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cart-item img {
+    margin-top: 2%;
+    width: 10%;
+    height: 10%;
+}
+
+/* Cart Responsive Section */
+@media screen and (max-width: 880px) {
+    .cart {
+        margin-top: -40%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .cart {
+        margin-top: -10%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cart {
+        margin-top: -80%;
+    }
+}
+
+/* Footer Section */
+.footer__container {
+    background-color: #141414;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__logo {
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* Social Media Icons */
+.social__icon--link {
+    color: #fff;
+    font-size: 24px;
+}
+
+.social__media {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.social__logo {
+    color: #fff;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.website__rights {
+    color: #fff;
+}
+
+/* Footer Responsive Section */
+@media screen and (max-width: 880px) {
+    .footer__container{
+        margin-top: 0px;
+    }
+    
+    #footer__logo {
+        margin-bottom: 2rem;
+    }
+
+    .website__rights {
+        margin-bottom: 2rem;
+    }
+
+    .social__media--wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .footer__container{
+        margin-top: 0px;
+    }
+
+    .social__icons {
+        width: 90%;
+    }
+}

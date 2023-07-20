@@ -1,0 +1,320 @@
+/* Main Section */
+.main {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1 {
+    font-size: 3.5rem;
+    background-image: linear-gradient(to top, #fffdd0 0%, #fff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__btn {
+    font-size: 1.25rem;
+    background-color: #18A999;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 3rem;
+    position: relative;
+    transition: all 0.35s;
+}
+
+.main__btn:hover {
+    background: #011936;
+    transition: all 0.3s ease;
+}
+
+.main__btn:not(:hover) {
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Main Responsive Section */
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .main {
+        margin-top: -20%;
+        margin-bottom: -20%;
+    }
+    
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/* More Section */
+.more {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+.more h1 {
+    background-color: #fffdd0;
+    background-image:linear-gradient(to right, #fffdd0 0%, #fff 100%);
+    background-size: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.more__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.more__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('https://i.imgur.com/dFjIvaL.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.more__card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('https://i.imgur.com/mjoloxU.jpg');
+}
+
+.more h2 {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.more__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #18A999;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.more__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+}
+
+.more__card:not(:hover) {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+/* More Responsive Section */
+@media screen and (max-width: 960px) {
+    .more {
+        height: 1600px;
+        margin-bottom: -300px;
+    }
+
+    .more__card {
+        width: 440px;
+    }
+
+    .more h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .more {
+        height: 1400px;
+        margin-bottom: -100%;
+    }
+
+    .more h1 {
+        font-size: 1.2rem;
+    }
+
+    .more__card {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .more__card {
+        width: 200px;
+    }
+}
+
+/* Footer Section */
+.footer__container {
+    background-color: #141414;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__logo {
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+/* Social Media Icons */
+.social__icon--link {
+    color: #fff;
+    font-size: 24px;
+}
+
+.social__media {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.social__logo {
+    color: #fff;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.website__rights {
+    color: #fff;
+}
+
+/* Footer Responsive Section*/
+@media screen and (max-width: 820px) {
+    #footer__logo {
+        margin-bottom: 2rem;
+    }
+
+    .website__rights {
+        margin-bottom: 2rem;
+    }
+
+    .footer__link--wrapper {
+        flex-direction: column;
+    }
+
+    .social__media--wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .footer__container {
+        margin-top: 70%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .social__icons {
+        width: 90%;
+    }
+}
